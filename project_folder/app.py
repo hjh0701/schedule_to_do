@@ -81,7 +81,7 @@ def calculate_free_time(parsed_json, daily_settings):
 st.title("공강 스케줄러")
 
 if not st.session_state.survey_done:
-    st.markdown("### 🧐 나의 캠퍼스 라이프 성향 테스트")
+    st.markdown("###나의 캠퍼스 라이프 성향 테스트")
     st.markdown("문항을 읽고, 평소 자신의 생각과 가장 가까운 정도를 선택해주세요.")
     st.divider()
     
@@ -162,7 +162,7 @@ if st.session_state.survey_done:
 
         if st.session_state.parsed_json:
             st.divider()
-            st.subheader("⚙️ 요일별 일과 및 점심시간 설정")
+            st.subheader("요일별 일과 및 점심시간 설정")
             
             days = ['월', '화', '수', '목', '금']
             cols = st.columns(5)
@@ -188,7 +188,7 @@ if st.session_state.survey_done:
             free_times = calculate_free_time(st.session_state.parsed_json, daily_settings)
             
             st.divider()
-            st.subheader("🎯 공강 시간 활동 AI 큐레이션")
+            st.subheader("공강 시간 활동 AI 큐레이션")
             
             preset_activities = [
                 "전공 과제/복습", 
