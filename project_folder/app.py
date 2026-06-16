@@ -256,7 +256,7 @@ if st.session_state.survey_done:
                             st.error(f"AI 배정 오류: {e}")
 
             if st.session_state.final_schedule:
-                st.success("✨ AI가 맞춤형 공강 스케줄을 완성했습니다!")
+                st.success("AI가 맞춤형 공강 스케줄을 완성했습니다")
                 df_final = pd.DataFrame(st.session_state.final_schedule)
                 
                 day_order = ['월', '화', '수', '목', '금']
